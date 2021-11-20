@@ -14,7 +14,7 @@ export default function Intro() {
             showCursor:false,
             backDelay: 1500,
             backSpeed: 60,
-            strings: [" React", " JS", " Scss", " Node", " MySQL"]
+            strings: [" React", " JS", " Scss / Css ", " Node JS", " MySQL"]
         });
 
     }, [])
@@ -28,7 +28,7 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Hi ther, I'm</h2>
+                    <h2>Bonjour, je suis</h2>
                     <h1>Sandra Meyniel</h1>
                     <h3>Developpeuse web<span ref={textRef}></span></h3>
                 </div>
