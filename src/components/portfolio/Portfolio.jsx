@@ -4,7 +4,7 @@ import PortfolioList from '../portfolioList/PortfolioList';
 import { featuredPortfolio, 
     webPortfolio,
     mobilePortfolio,
-    designPortfolio,
+    technoPortfolio,
     contentPortfolio
 } from "../../data"
 
@@ -27,8 +27,8 @@ export default function Portfolio() {
             title: "Mobile App",
         },
         {
-            id: "design",
-            title: "Design",
+            id: "techno",
+            title: "Techno",
         },
         {
             id: "content",
@@ -47,8 +47,8 @@ export default function Portfolio() {
           case "mobile":
             setData(mobilePortfolio);
             break;
-          case "design":
-            setData(designPortfolio);
+          case "techno":
+            setData(technoPortfolio);
             break;
           case "content":
             setData(contentPortfolio);
@@ -76,7 +76,7 @@ export default function Portfolio() {
                 {data.map(d=>(
                     <div className="item">
                          <img src={d.img} alt=""/> 
-                         <h3>Nutrition App</h3>
+                         <h3>{d.title}</h3>
                     </div>
                 ))}
             </div>
