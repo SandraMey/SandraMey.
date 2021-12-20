@@ -88,9 +88,13 @@
             justify-content: space-around;
 
             input{
-                width: 300px;
+                width: 50%;
                 height: 50px;
+                border: none;
+                border-bottom: 1px solid black;
+                margin: 10px 0px;
                 font-size: 14px;
+                padding-left: 10px;
 
                 @include mobile{
                     width: 200px;
