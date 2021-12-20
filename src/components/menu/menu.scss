@@ -1,18 +1,23 @@
 @import "../../global.scss";
 
 .menu{
-    width: 330px;
+    width: 500px;
     height: 100vh;
     background-color: $mainColor;
     position: fixed;
     top: 0;
-    right: -330px;
+    right: -500px;
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 1s ease;
+
+    @include mobile{
+        width: 360px;
+        right: -360px;
+    }
 
     &.active{
         right: 0;
@@ -26,6 +31,10 @@
         font-weight: 400;
         color: white;
         width: 60%;
+
+        @include mobile{
+            font-size: 20px ;
+        }
 
         li{
             margin-bottom: 25px;

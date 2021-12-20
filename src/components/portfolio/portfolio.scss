@@ -7,10 +7,12 @@
     align-items: center;
 
     h1{
-        font-size: 100px;
+        font-size: 50px;
+        width: 400px;
 
         @include mobile{
             font-size: 30px;
+            margin-left: 150px;
         }
     }
 
@@ -21,27 +23,27 @@
         display: flex;
 
         @include mobile{
-            margin: 10px 0;
+            margin: 5px 0;
             flex-wrap: wrap;
             justify-content: center;
 
         }
     }
     .container{
-        width: 70%;
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
 
         @include mobile{
-            width: 100%;
+            width: 80%;
 
         }
 
         .item{
-            width: 250px;
-            height: 190px;
+            width: 300px;
+            height: 250px;
             border-radius: 20px;
             border: 1px solid rgb(240, 239, 239);
             margin: 30px 30px;
@@ -54,9 +56,9 @@
             cursor: pointer;
 
             @include mobile{
-                width: 135px;
+                width: 240px;
                 height: 120px;
-                margin: 20px 20px;
+                margin: 15px 15px;
             }
 
             h3{
@@ -71,7 +73,9 @@
                 z-index: 1;
             }
             &:hover{
-                background-color: $mainColor;
+                background-color: rgb(252, 140, 96);
+                display: flex;
+                text-align: center;
                 img{
                     opacity: 0.2;
                     z-index: 0;
