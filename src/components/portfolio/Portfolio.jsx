@@ -40,7 +40,7 @@ export default function Portfolio() {
             setData(technoPortfolio);
             break;
           default:
-            setData(webPortfolio);
+            setData(mobilePortfolio);
         }
       }, [selected]);
 

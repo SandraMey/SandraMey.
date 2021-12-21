@@ -1,7 +1,10 @@
 @import "../../global.scss";
 
 .contact{
-    background-color: white;
+    background-image: url("../../assets/vague2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: absolute;
     display: flex;
 
     @include mobile{
@@ -116,8 +119,8 @@
             button{
                 width: 150px;
                 height: 30px;
-                color: white;
-                background-color: coral;
+                color: black;
+                background-color: #FABB51;
                 border: none;
                 border-radius: 10px;
                 font-weight: 500;
