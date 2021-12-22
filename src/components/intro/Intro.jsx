@@ -14,7 +14,7 @@ export default function Intro() {
             showCursor:false,
             backDelay: 1500,
             backSpeed: 60,
-            strings: [" React", " JS", " Scss / Css ", " Node JS", " MySQL"]
+            strings: [" React", " JS", " Scss / Css ", " Node JS / Express", " MySQL / Mongo"]
         });
 
     }, [])

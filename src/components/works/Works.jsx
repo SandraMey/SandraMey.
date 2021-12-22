@@ -8,31 +8,36 @@ export default function Works() {
     const data = [
         {
           id: "1",
-          icon: "./assets/mobile.png",
-          title: "Web Design",
+          title: "Mr Cheesecake",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+            'Application web vous permettant de scanner des produits ou de les recherches afin de trouver leurs valeurs nutritionnelles. Maquette crée sur Figma et site developpé en React et Css avec consommation d\'Api pour récupérer les données nutritionnelles. ',
           img:
             "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
         },
         {
           id: "2",
-          icon: "./assets/globe.png",
-          title: "Mobile Application",
+          title: "Happy Candles",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "Site E-commerce de vente de bougie avec la possibilités de mettre au panier les produits. Développé en React, Css et Express. Site en cours de construction",
           img:
             "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
         },
         {
           id: "3",
-          icon: "./assets/writing.png",
-          title: "Branding",
+          title: "Bon voyage",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "Site proposant des activités dans plusieurs villes de France, Développé en HTML, en CSS et en JS.",
           img:
             "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
         },
+        {
+            id: "4",
+            title: "Mash Up",
+            desc:
+              "Application permettant de créer un playlist collaborative grâce à l'API de Spotify.",
+            img:
+              "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+          },
       ];
 
       const handleClick = (way) => {
@@ -58,7 +63,7 @@ export default function Works() {
                                 <h2>{d.title}</h2>
                                 <p>{d.desc}
                                 </p>
-                                <span>Projets</span>
+                                <span>Lien vers le GitHub</span>
                             </div>
                         </div>
                         <div className="right">

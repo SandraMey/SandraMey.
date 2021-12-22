@@ -1,4 +1,5 @@
 import React from 'react'
+import dot from '../../assets/black-circle.png'
 import "./topbar.scss"
 
 
@@ -7,8 +8,8 @@ export default function Topbar({menuOpen, setMenuOpen}) {
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo">Sandra Dev<span> .</span></a>
-
+                    <a href="#intro" className="logo">Sandra Dev</a>
+                    <img src={dot}/>
                 </div>
                 
                 <div className="right">

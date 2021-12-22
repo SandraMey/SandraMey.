@@ -25,24 +25,34 @@
                 font-weight: 700;
                 text-decoration: none;
                 color: inherit;
-                margin-right: 40px;
-
+ 
                 @include mobile{
                     font-size: 30px;
                 }
+                &.active{
+                    color: #FAEDC6;
+                }
  
             }
-            span{
+            img{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-left: 10px;
+                margin-top: 18px;
+                width: 10px;
+                height: 10px;
                 color: #048B9A;
-                animation:  arrowBlink 5s ease-in-out infinite;
+                animation:  bounce 5s ease-in-out infinite;
             }
-            @keyframes arrowBlink {
-                100%{
-                    opacity: 0;
-                }
-                0%{
-                    opacity: 100;
-                }
+            @keyframes bounce {
+                0%   { transform: scale(1,1)    translateY(0); }
+                10%  { transform: scale(1.1,.9) translateY(0); }
+                30%  { transform: scale(.9,1.1) translateY(-10px); }
+                50%  { transform: scale(1,1)    translateY(0); }
+                57%  { transform: scale(1,1)    translateY(-3px); }
+                64%  { transform: scale(1,1)    translateY(0); }
+                100% { transform: scale(1,1)    translateY(0); }
             }
 
         }

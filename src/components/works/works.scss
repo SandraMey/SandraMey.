@@ -1,7 +1,10 @@
 @import "../../global.scss";
 
 .works{
-    background-color: coral;
+    background-image: url("../../assets/vague.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +88,7 @@
                             width: 40px;
                             height: 40px;
                             border-radius: 50%;
-                            background-color: rgb(245, 179, 155);
+                            background-color: #FABB51;
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -95,13 +98,6 @@
                                 height: 25px;
                             }
 
-                            img{
-                                width: 25px;
-
-                                @include mobile{
-                                    width: 15px;
-                                }
-                            }
                         }
                         h2{
                             font-size: 20px;

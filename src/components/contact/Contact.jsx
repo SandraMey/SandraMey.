@@ -4,8 +4,6 @@ import phone from "../../assets/phone.png"
 import email from "../../assets/email.png"
 import emailjs from 'emailjs-com';
 
-
-
 function Contact() {
 
     const form = useRef();
@@ -30,7 +28,7 @@ function Contact() {
         <div className="contact" id="contact">
             <div className="left">
                 <div className="lefttitle">
-                <h1>Besoin d'une developpeuse? N'hésitez pas à me contacter pour discuter de votre projet</h1>
+                <h1>Besoin d'une developpeuse?<br></br> N'hésitez pas à me contacter pour discuter de votre projet</h1>
                 </div>
                 <div className="itemcontainer">
                         <img className="icon" src={phone}/>

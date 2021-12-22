@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import "./portfolio.scss"
 import PortfolioList from '../portfolioList/PortfolioList';
-import { featuredPortfolio, 
-    webPortfolio,
+import { webPortfolio,
     mobilePortfolio,
     technoPortfolio,
-    contentPortfolio
 } from "../../data"
 
 export default function Portfolio() {
